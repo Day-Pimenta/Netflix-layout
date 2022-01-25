@@ -1,0 +1,184 @@
+
+:root{
+    --vermelho: #e50914;
+    --preta:#141414;
+}
+
+*{
+    margin:  0 auto;
+    box-sizing: border-box;
+}
+/*Corpo do site*/
+body{
+    background: var(--preta);
+    font-family: 'Times New Roman', Times, serif;
+    color: white;
+}
+
+header .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+header .logo{
+    color: var(--vermelho);
+    font-family: 'New Rocker', cursive;
+    font-size: 40px;
+}
+
+header nav a{
+    text-decoration: none;
+    color: rgb(221, 204, 204);
+    font-family: 'New Rocker', cursive;
+    margin: 10px;
+}
+
+header nav a:hover{
+    color:#fff;
+}
+
+/*Filme principa*/
+
+.filme-principal{
+    font-size: 16px;
+    height: 400px;
+    background:linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)100%), url(/img/bg-pearljam.jpg);
+    background-size: cover;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .description{
+    margin-bottom: 40px;
+}
+
+.titulo{
+    font-size: 30px;
+    margin-bottom: 15px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+.botao{
+    background-color: rgba(0,0,0,.50);
+    border:none;
+    color: white;
+
+    padding:15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+
+    cursor: pointer;
+    transition: .3s ease all;
+}
+
+.botao:hover{
+    background-color:white;
+    color:black;
+}
+
+.botao i{
+    margin-right: 8px;
+}
+
+
+.container{
+    margin-left: 20px;
+}
+
+.container p{
+    width: 750px
+}
+
+/*Formatção corrossel*/
+.carrossel-filme{
+    margin: 15px;
+}
+
+.carrossel-filme h3{
+   margin-bottom: 15px; 
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 16px;
+}
+.box-filme{
+    height: 100%;
+    width: 100%;
+    display: block;
+}
+
+
+
+  
+/*Configurações do rodapé*/
+
+
+
+footer .container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+footer .logo{
+    color: var(--vermelho);
+    font-family: 'New Rocker', cursive;
+    font-size: 20px;
+}
+
+footer nav a{
+    text-decoration: none;
+    color: rgb(221, 204, 204);
+    margin: 10px;
+}
+
+footer nav a:hover{
+    color:#fff;
+    width: auto;
+    height: auto;
+}
+
+/*Responsividade*/
+
+@media screen and (max-width: 700px) {
+    header .container{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .container p{
+        width: 350px;
+    }
+    
+}
+
+@media  screen and (min-width: 1000px){
+    .description{
+       
+        display: block;
+        align-items: flex-start;
+
+    }
+    
+}
+
+/*Mudança por seleção */
+
+.filme1{
+    font-size: 16px;
+    height: 400px;
+    background:linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)100%), url(/img/bg-umbrella.jpg);
+    background-size: cover;
+
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme1 .description{
+    margin-bottom: 40px;
+}
+
+
